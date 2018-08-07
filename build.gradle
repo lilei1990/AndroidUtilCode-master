@@ -1,0 +1,35 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    apply from: 'config.gradle'
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath depConfig.gradle
+//        classpath depConfig.kotlin_gradle_plugin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+
+        resolutionStrategy.eachDependency {
+            if (it.requested.group == 'com.android.support'
+                    && !it.requested.name.contains('multidex')) {
+                it.useVersion versionConfig.support
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
