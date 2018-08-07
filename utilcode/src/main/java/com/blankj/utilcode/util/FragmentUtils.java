@@ -1350,7 +1350,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Remove fragment.
+     *  移除 fragment
      *
      * @param remove The fragment will be removed.
      */
@@ -1359,7 +1359,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Remove to fragment.
+     * 移除到指定 fragment
      *
      * @param removeTo      The fragment will be removed to.
      * @param isIncludeSelf True to include the fragment, false otherwise.
@@ -1370,7 +1370,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Remove all fragments.
+     * 移除所有 fragment
      *
      * @param fm The manager of fragment.
      */
@@ -1511,7 +1511,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Return the top fragment.
+     * 获取顶部 fragment
      *
      * @param fm The manager of fragment.
      * @return the top fragment
@@ -1521,7 +1521,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Return the top fragment in stack.
+     * 获取栈中顶部 fragment
      *
      * @param fm The manager of fragment.
      * @return the top fragment in stack
@@ -1550,7 +1550,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Return the top fragment which is shown.
+     * 获取顶部可见 fragment
      *
      * @param fm The manager of fragment.
      * @return the top fragment which is shown
@@ -1560,7 +1560,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Return the top fragment which is shown in stack.
+     * 获取栈中顶部可见 fragment
      *
      * @param fm The manager of fragment.
      * @return the top fragment which is shown in stack
@@ -1592,7 +1592,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Return the fragments in manager.
+     * 获取同级别的 fragment
      *
      * @param fm The manager of fragment.
      * @return the fragments in manager
@@ -1604,7 +1604,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Return the fragments in stack in manager.
+     * 获取同级别栈中的 fragment
      *
      * @param fm The manager of fragment.
      * @return the fragments in stack in manager
@@ -1624,7 +1624,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Return all fragments in manager.
+     * 获取所有 fragment
      *
      * @param fm The manager of fragment.
      * @return all fragments in manager
@@ -1648,7 +1648,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Return all fragments in stack in manager.
+     * 获取栈中所有 fragment
      *
      * @param fm The manager of fragment.
      * @return all fragments in stack in manager
@@ -1675,7 +1675,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Find fragment.
+     * 查找 fragment
      *
      * @param fm      The manager of fragment.
      * @param findClz The class of fragment will be found.
@@ -1687,7 +1687,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Find fragment.
+     * 查找 fragment
      *
      * @param fm  The manager of fragment.
      * @param tag The tag of fragment will be found.
@@ -1699,7 +1699,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Dispatch the back press for fragment.
+     * 处理 fragment 回退键.
      *
      * @param fragment The fragment.
      * @return {@code true}: the fragment consumes the back press<br>{@code false}: otherwise
@@ -1713,7 +1713,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Dispatch the back press for fragment.
+     * 处理 fragment 回退键.
      *
      * @param fm The manager of fragment.
      * @return {@code true}: the fragment consumes the back press<br>{@code false}: otherwise
@@ -1736,7 +1736,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Set background color for fragment.
+     * 设置背景色
      *
      * @param fragment The fragment.
      * @param color    The background color.
@@ -1750,7 +1750,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Set background resource for fragment.
+     * 设置背景资源
      *
      * @param fragment The fragment.
      * @param resId    The resource id.
@@ -1764,7 +1764,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Set background color for fragment.
+     * 设置背景
      *
      * @param fragment   The fragment.
      * @param background The background.
@@ -1780,7 +1780,7 @@ public final class FragmentUtils {
     }
 
     /**
-     * Return the simple name of fragment.
+     * 获取fragment名字
      *
      * @param fragment The fragment.
      * @return the simple name of fragment
