@@ -57,7 +57,7 @@ import javax.xml.transform.stream.StreamSource;
  *     作者: robot
  *
  *     time  : 2016/09/21
- *     desc  : utils about log
+ *     desc  : 日志相关
  * </pre>
  */
 public final class LogUtils {

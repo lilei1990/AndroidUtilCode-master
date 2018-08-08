@@ -20,7 +20,7 @@ import java.util.Map;
  *     作者: robot
  *
  *     time  : 2017/12/15
- *     desc  : utils about reflect
+ *     desc  : 反射相关
  * </pre>
  */
 public final class ReflectUtils {
@@ -43,7 +43,7 @@ public final class ReflectUtils {
     ///////////////////////////////////////////////////////////////////////////
 
     /**
-     * Reflect the class.
+     * 设置要反射的类
      *
      * @param className The name of class.
      * @return the single {@link ReflectUtils} instance
@@ -55,7 +55,7 @@ public final class ReflectUtils {
     }
 
     /**
-     * Reflect the class.
+     * 设置要反射的类
      *
      * @param className   The name of class.
      * @param classLoader The loader of class.
@@ -68,7 +68,7 @@ public final class ReflectUtils {
     }
 
     /**
-     * Reflect the class.
+     * 设置要反射的类
      *
      * @param clazz The class.
      * @return the single {@link ReflectUtils} instance
@@ -80,7 +80,7 @@ public final class ReflectUtils {
     }
 
     /**
-     * Reflect the class.
+     * 设置要反射的类
      *
      * @param object The object.
      * @return the single {@link ReflectUtils} instance
@@ -112,7 +112,7 @@ public final class ReflectUtils {
     ///////////////////////////////////////////////////////////////////////////
 
     /**
-     * Create and initialize a new instance.
+     * 实例化反射对象
      *
      * @return the single {@link ReflectUtils} instance
      */
@@ -121,7 +121,7 @@ public final class ReflectUtils {
     }
 
     /**
-     * Create and initialize a new instance.
+     * 实例化反射对象
      *
      * @param args The args.
      * @return the single {@link ReflectUtils} instance
@@ -194,7 +194,7 @@ public final class ReflectUtils {
     ///////////////////////////////////////////////////////////////////////////
 
     /**
-     * Get the field.
+     * 设置反射的字段
      *
      * @param name The name of field.
      * @return the single {@link ReflectUtils} instance
@@ -209,7 +209,7 @@ public final class ReflectUtils {
     }
 
     /**
-     * Set the field.
+     * 设置反射的方法
      *
      * @param name  The name of field.
      * @param value The value.

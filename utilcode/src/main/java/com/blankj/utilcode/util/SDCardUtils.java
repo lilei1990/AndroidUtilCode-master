@@ -16,7 +16,7 @@ import java.util.List;
  *     作者: robot
  *
  *     time  : 2016/08/11
- *     desc  : utils about sdcard
+ *     desc  : SD 卡相关
  * </pre>
  */
 public final class SDCardUtils {
@@ -26,7 +26,7 @@ public final class SDCardUtils {
     }
 
     /**
-     * Return whether sdcard is enabled by environment.
+     * 根据 Environment 判断 SD 卡是否可用
      *
      * @return true : enabled<br>false : disabled
      */
@@ -35,7 +35,7 @@ public final class SDCardUtils {
     }
 
     /**
-     * Return the path of sdcard by environment.
+     * 根据 Environment 获取 SD 卡路径
      *
      * @return the path of sdcard by environment
      */
@@ -47,7 +47,7 @@ public final class SDCardUtils {
     }
 
     /**
-     * Return whether sdcard is enabled.
+     * 判断 SD 卡是否可用
      *
      * @return true : enabled<br>false : disabled
      */
@@ -56,7 +56,7 @@ public final class SDCardUtils {
     }
 
     /**
-     * Return the paths of sdcard.
+     * 获取 SD 卡路径
      *
      * @param removable True to return the paths of removable sdcard, false otherwise.
      * @return the paths of sdcard
@@ -93,7 +93,7 @@ public final class SDCardUtils {
     }
 
     /**
-     * Return the paths of sdcard.
+     * 获取 SD 卡路径
      *
      * @return the paths of sdcard
      */

@@ -23,7 +23,7 @@ import java.lang.ref.WeakReference;
  *     作者: robot
  *
  *     time  : 2016/10/16
- *     desc  : utils about snackbar
+ *     desc  : Snackbar 相关
  * </pre>
  */
 public final class SnackbarUtils {
@@ -73,7 +73,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Set the view to find a parent from.
+     * 设置 snackbar 依赖 view
      *
      * @param view The view to find a parent from.
      * @return the single {@link SnackbarUtils} instance
@@ -83,7 +83,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Set the message.
+     * 设置消息
      *
      * @param msg The message.
      * @return the single {@link SnackbarUtils} instance
@@ -94,7 +94,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Set the color of message.
+     * 设置消息颜色
      *
      * @param color The color of message.
      * @return the single {@link SnackbarUtils} instance
@@ -105,7 +105,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Set the color of background.
+     * 设置背景色
      *
      * @param color The color of background.
      * @return the single {@link SnackbarUtils} instance
@@ -116,7 +116,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Set the resource of background.
+     * 设置背景资源
      *
      * @param bgResource The resource of background.
      * @return the single {@link SnackbarUtils} instance
@@ -127,7 +127,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Set the duration.
+     * 设置显示时长
      *
      * @param duration The duration.
      *                 <ul>
@@ -143,7 +143,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Set the action.
+     * 设置行为
      *
      * @param text     The text.
      * @param listener The click listener.
@@ -155,7 +155,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Set the action.
+     * 设置行为
      *
      * @param text     The text.
      * @param color    The color of text.
@@ -173,7 +173,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Set the bottom margin.
+     * 设置底边距
      *
      * @param bottomMargin The size of bottom margin, in pixel.
      */
@@ -183,7 +183,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Show the snackbar.
+     * 显示 snackbar
      */
     public void show() {
         final View view = this.view;
@@ -220,7 +220,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Show the snackbar with success style.
+     * 显示预设成功的 snackbar
      */
     public void showSuccess() {
         bgColor = COLOR_SUCCESS;
@@ -230,7 +230,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Show the snackbar with warning style.
+     * 显示预设警告的 snackbar
      */
     public void showWarning() {
         bgColor = COLOR_WARNING;
@@ -240,7 +240,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Show the snackbar with error style.
+     * 显示预设错误的 snackbar
      */
     public void showError() {
         bgColor = COLOR_ERROR;
@@ -250,7 +250,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Dismiss the snackbar.
+     * 消失 snackbar
      */
     public static void dismiss() {
         if (sReference != null && sReference.get() != null) {
@@ -260,7 +260,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Return the view of snackbar.
+     * 获取 snackbar 视图
      *
      * @return the view of snackbar
      */
@@ -271,7 +271,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Add view to the snackbar.
+     * 添加 snackbar 视图
      * <p>Call it after {@link #show()}</p>
      *
      * @param layoutId The id of layout.
@@ -289,7 +289,7 @@ public final class SnackbarUtils {
     }
 
     /**
-     * Add view to the snackbar.
+     * 添加 snackbar 视图
      * <p>Call it after {@link #show()}</p>
      *
      * @param child  The child view.

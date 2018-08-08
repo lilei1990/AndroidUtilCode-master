@@ -19,7 +19,7 @@ import java.lang.reflect.Field;
  *     作者: robot
  *
  *     time  : 2016/08/02
- *     desc  : utils about keyboard
+ *     desc  : 键盘相关
  * </pre>
  */
 public final class KeyboardUtils {
@@ -34,7 +34,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Show the soft input.
+     * 动态显示软键盘
      *
      * @param activity The activity.
      */
@@ -53,7 +53,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Show the soft input.
+     * 动态显示软键盘
      *
      * @param view The view.
      */
@@ -68,7 +68,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Hide the soft input.
+     * 动态隐藏软键盘
      *
      * @param activity The activity.
      */
@@ -82,7 +82,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Hide the soft input.
+     * 动态隐藏软键盘
      *
      * @param view The view.
      */
@@ -94,7 +94,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Toggle the soft input display or not.
+     * 切换键盘显示与否状态
      */
     public static void toggleSoftInput() {
         InputMethodManager imm =
@@ -104,7 +104,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Return whether soft input is visible.
+     * 判断软键盘是否可见
      * <p>The minimum height is 200</p>
      *
      * @param activity The activity.
@@ -115,7 +115,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Return whether soft input is visible.
+     * 判断软键盘是否可见
      *
      * @param activity             The activity.
      * @param minHeightOfSoftInput The minimum height of soft input.
@@ -137,7 +137,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Register soft input changed listener.
+     * 注册软键盘改变监听器
      *
      * @param activity The activity.
      * @param listener The soft input changed listener.
@@ -168,7 +168,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Register soft input changed listener.
+     * 注销软键盘改变监听器
      *
      * @param activity The activity.
      */
@@ -181,7 +181,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Fix the bug of 5497 in Android.
+     * 修复安卓 5497 BUG
      *
      * @param activity The activity.
      */
@@ -213,7 +213,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Fix the leaks of soft input.
+     * 修复软键盘内存泄漏
      * <p>Call the function in {@link Activity#onDestroy()}.</p>
      *
      * @param context The context.
@@ -246,7 +246,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Click blankj area to hide soft input.
+     * 点击屏幕空白区域隐藏软键盘
      * <p>Copy the following code in ur activity.</p>
      */
     public static void clickBlankArea2HideSoftInput() {

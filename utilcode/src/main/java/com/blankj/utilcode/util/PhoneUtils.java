@@ -22,7 +22,7 @@ import static android.Manifest.permission.SEND_SMS;
  *     作者: robot
  *
  *     time  : 2016/08/02
- *     desc  : utils about phone
+ *     desc  : 手机相关
  * </pre>
  */
 public final class PhoneUtils {
@@ -32,7 +32,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return whether the device is phone.
+     * 判断设备是否是手机
      *
      * @return {@code true}: yes<br>{@code false}: no
      */
@@ -43,7 +43,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return the unique device id.
+     * 获取设备码
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.READ_PHONE_STATE" />}</p>
      *
@@ -66,7 +66,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return the serial of device.
+     * 获取序列号
      *
      * @return the serial of device
      */
@@ -77,7 +77,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return the IMEI.
+     * 获取 IMEI 码
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.READ_PHONE_STATE" />}</p>
      *
@@ -95,7 +95,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return the MEID.
+     * 获取 MEID 码
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.READ_PHONE_STATE" />}</p>
      *
@@ -114,7 +114,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return the IMSI.
+     * 获取 IMSI 码
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.READ_PHONE_STATE" />}</p>
      *
@@ -129,7 +129,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Returns the current phone type.
+     * 获取移动终端类型
      *
      * @return the current phone type
      * <ul>
@@ -146,7 +146,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return whether sim card state is ready.
+     * 判断 sim 卡是否准备好
      *
      * @return {@code true}: yes<br>{@code false}: no
      */
@@ -157,7 +157,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return the sim operator name.
+     * 获取 Sim 卡运营商名称
      *
      * @return the sim operator name
      */
@@ -168,7 +168,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return the sim operator using mnc.
+     * 获取 Sim 卡运营商 mnc.
      *
      * @return the sim operator
      */
@@ -192,7 +192,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Return the phone status.
+     * 获取手机状态信息
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.READ_PHONE_STATE" />}</p>
      *
@@ -238,7 +238,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Skip to dial.
+     * 跳至拨号界面
      *
      * @param phoneNumber The phone number.
      */
@@ -248,7 +248,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Make a phone call.
+     * 拨打 phoneNumber
      * <p>Must hold {@code <uses-permission android:name="android.permission.CALL_PHONE" />}</p>
      *
      * @param phoneNumber The phone number.
@@ -260,7 +260,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Send sms.
+     * 跳至发送短信界面
      *
      * @param phoneNumber The phone number.
      * @param content     The content.
@@ -273,7 +273,7 @@ public final class PhoneUtils {
     }
 
     /**
-     * Send sms silently.
+     * 发送短信
      * <p>Must hold {@code <uses-permission android:name="android.permission.SEND_SMS" />}</p>
      *
      * @param phoneNumber The phone number.

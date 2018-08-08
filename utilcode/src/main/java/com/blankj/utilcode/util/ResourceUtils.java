@@ -20,7 +20,7 @@ import java.util.List;
  *     作者: robot
  *
  *     time  : 2018/05/07
- *     desc  : utils about resource
+ *     desc  : 资源相关
  * </pre>
  */
 public final class ResourceUtils {
@@ -32,7 +32,7 @@ public final class ResourceUtils {
     }
 
     /**
-     * Copy the file from assets.
+     * 从 assets 中拷贝文件
      *
      * @param assetsFilePath The path of file in assets.
      * @param destFilePath   The path of destination file.
@@ -61,7 +61,7 @@ public final class ResourceUtils {
     }
 
     /**
-     * Return the content of assets.
+     * 从 assets 中拷贝文件
      *
      * @param assetsFilePath The path of file in assets.
      * @return the content of assets
@@ -71,7 +71,7 @@ public final class ResourceUtils {
     }
 
     /**
-     * Return the content of assets.
+     * 从 assets 中拷贝文件
      *
      * @param assetsFilePath The path of file in assets.
      * @param charsetName    The name of charset.
@@ -100,7 +100,7 @@ public final class ResourceUtils {
     }
 
     /**
-     * Return the content of file in assets.
+     * 从 assets 中按行读取字符串
      *
      * @param assetsPath The path of file in assets.
      * @return the content of file in assets
@@ -110,7 +110,7 @@ public final class ResourceUtils {
     }
 
     /**
-     * Return the content of file in assets.
+     * 从 assets 中按行读取字符串
      *
      * @param assetsPath  The path of file in assets.
      * @param charsetName The name of charset.
@@ -128,7 +128,7 @@ public final class ResourceUtils {
 
 
     /**
-     * Copy the file from raw.
+     * 从 raw 中拷贝文件
      *
      * @param resId        The resource id.
      * @param destFilePath The path of destination file.
@@ -143,7 +143,7 @@ public final class ResourceUtils {
     }
 
     /**
-     * Return the content of resource in raw.
+     * 从 raw 中读取字符串
      *
      * @param resId The resource id.
      * @return the content of resource in raw
@@ -153,7 +153,7 @@ public final class ResourceUtils {
     }
 
     /**
-     * Return the content of resource in raw.
+     * 从 raw 中读取字符串
      *
      * @param resId       The resource id.
      * @param charsetName The name of charset.
@@ -176,7 +176,7 @@ public final class ResourceUtils {
     }
 
     /**
-     * Return the content of resource in raw.
+     * 从 raw 中按行读取字符串
      *
      * @param resId The resource id.
      * @return the content of file in assets
@@ -186,7 +186,7 @@ public final class ResourceUtils {
     }
 
     /**
-     * Return the content of resource in raw.
+     * 从 raw 中按行读取字符串
      *
      * @param resId       The resource id.
      * @param charsetName The name of charset.

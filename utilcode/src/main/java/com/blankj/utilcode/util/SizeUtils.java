@@ -12,7 +12,7 @@ import android.view.ViewGroup;
  *     作者: robot
  *
  *     time  : 2016/08/02
- *     desc  : utils about size
+ *     desc  : 尺寸相关
  * </pre>
  */
 public final class SizeUtils {
@@ -110,6 +110,7 @@ public final class SizeUtils {
     }
 
     /**
+     * 各种单位转换
      * Converts an unpacked complex data value holding a dimension to its final floating
      * point value. The two parameters <var>unit</var> and <var>value</var>
      * are as in {@link TypedValue#TYPE_DIMENSION}.
@@ -154,7 +155,7 @@ public final class SizeUtils {
     }
 
     /**
-     * Force get the size of view.
+     * 在 onCreate 中获取视图的尺寸
      * <p>e.g.</p>
      * <pre>
      * SizeUtils.forceGetViewSize(view, new SizeUtils.onGetSizeListener() {
@@ -180,7 +181,7 @@ public final class SizeUtils {
     }
 
     /**
-     * Return the width of view.
+     * 获取测量视图宽度
      *
      * @param view The view.
      * @return the width of view
@@ -190,7 +191,7 @@ public final class SizeUtils {
     }
 
     /**
-     * Return the height of view.
+     * 获取测量视图高度
      *
      * @param view The view.
      * @return the height of view
@@ -200,7 +201,7 @@ public final class SizeUtils {
     }
 
     /**
-     * Measure the view.
+     * 测量视图尺寸
      *
      * @param view The view.
      * @return arr[0]: view's width, arr[1]: view's height

@@ -15,7 +15,7 @@ import java.util.Set;
  *     作者: robot
  *
  *     time  : 2016/08/02
- *     desc  : utils about shared preference
+ *     desc  : SP 相关
  * </pre>
  */
 @SuppressLint("ApplySharedPref")

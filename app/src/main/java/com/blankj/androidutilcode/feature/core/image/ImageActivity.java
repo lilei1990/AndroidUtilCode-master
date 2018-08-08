@@ -61,9 +61,9 @@ public class ImageActivity extends BaseBackActivity {
 
         int width = src.getWidth();
         int height = src.getHeight();
-
+        String s = "#8000FF01";
         mList.add(new ImageBean(R.string.image_src, src));
-        mList.add(new ImageBean(R.string.image_add_color, ImageUtils.drawColor(src, Color.parseColor("#8000FF00"))));
+        mList.add(new ImageBean(R.string.image_add_color, ImageUtils.drawColor(src, Color.parseColor(s))));
         mList.add(new ImageBean(R.string.image_scale, ImageUtils.scale(src, width / 2, height / 2)));
         mList.add(new ImageBean(R.string.image_clip, ImageUtils.clip(src, 0, 0, width / 2, height / 2)));
         mList.add(new ImageBean(R.string.image_skew, ImageUtils.skew(src, 0.2f, 0.1f)));

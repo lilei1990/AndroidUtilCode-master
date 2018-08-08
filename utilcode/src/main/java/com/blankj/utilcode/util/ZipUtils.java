@@ -35,6 +35,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 批量压缩文件
      * Zip the files.
      *
      * @param srcFiles    The source of files.
@@ -49,6 +50,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 批量压缩文件
      * Zip the files.
      *
      * @param srcFilePaths The paths of source files.
@@ -78,6 +80,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 批量压缩文件
      * Zip the files.
      *
      * @param srcFiles The source of files.
@@ -91,6 +94,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 批量压缩文件
      * Zip the files.
      *
      * @param srcFiles The source of files.
@@ -120,6 +124,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 压缩文件
      * Zip the file.
      *
      * @param srcFilePath The path of source file.
@@ -134,6 +139,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 压缩文件
      * Zip the file.
      *
      * @param srcFilePath The path of source file.
@@ -150,6 +156,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 压缩文件
      * Zip the file.
      *
      * @param srcFile The source of file.
@@ -164,6 +171,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 压缩文件
      * Zip the file.
      *
      * @param srcFile The source of file.
@@ -229,6 +237,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 解压文件
      * Unzip the file.
      *
      * @param zipFilePath The path of ZIP file.
@@ -243,6 +252,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 解压文件
      * Unzip the file.
      *
      * @param zipFile The ZIP file.
@@ -257,6 +267,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 解压带有关键字的文件
      * Unzip the file by keyword.
      *
      * @param zipFilePath The path of ZIP file.
@@ -273,6 +284,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 解压带有关键字的文件
      * Unzip the file by keyword.
      *
      * @param zipFile The ZIP file.
@@ -350,6 +362,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 获取压缩文件中的文件路径链表
      * Return the files' path in ZIP file.
      *
      * @param zipFilePath The path of ZIP file.
@@ -362,6 +375,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 获取压缩文件中的文件路径链表
      * Return the files' path in ZIP file.
      *
      * @param zipFile The ZIP file.
@@ -380,6 +394,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 获取压缩文件中的注释链表
      * Return the files' comment in ZIP file.
      *
      * @param zipFilePath The path of ZIP file.
@@ -392,6 +407,7 @@ public final class ZipUtils {
     }
 
     /**
+     * 获取压缩文件中的注释链表
      * Return the files' comment in ZIP file.
      *
      * @param zipFile The ZIP file.

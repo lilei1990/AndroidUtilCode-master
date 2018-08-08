@@ -28,7 +28,7 @@ import static android.Manifest.permission.KILL_BACKGROUND_PROCESSES;
  *     作者: robot
  *
  *     time  : 2016/10/18
- *     desc  : utils about process
+ *     desc  : 进程相关
  * </pre>
  */
 public final class ProcessUtils {
@@ -38,7 +38,7 @@ public final class ProcessUtils {
     }
 
     /**
-     * Return the foreground process name.
+     * 获取前台进程包名
      * <p>Target APIs greater than 21 must hold
      * {@code <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />}</p>
      *
@@ -115,7 +115,7 @@ public final class ProcessUtils {
     }
 
     /**
-     * Return all background processes.
+     * 获取后台线程
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />}</p>
      *
@@ -137,7 +137,7 @@ public final class ProcessUtils {
     }
 
     /**
-     * Kill all background processes.
+     * 杀死所有的后台服务进程
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />}</p>
      *
@@ -166,7 +166,7 @@ public final class ProcessUtils {
     }
 
     /**
-     * Kill background processes.
+     * 杀死后台服务进程
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />}</p>
      *
@@ -196,7 +196,7 @@ public final class ProcessUtils {
     }
 
     /**
-     * Return whether app running in the main process.
+     * 判断是否运行在主进程
      *
      * @return {@code true}: yes<br>{@code false}: no
      */
@@ -205,7 +205,7 @@ public final class ProcessUtils {
     }
 
     /**
-     * Return the name of current process.
+     * 获取当前进程名称
      *
      * @return the name of current process
      */

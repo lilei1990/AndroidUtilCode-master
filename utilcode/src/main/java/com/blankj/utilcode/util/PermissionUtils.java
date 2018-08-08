@@ -32,7 +32,7 @@ import static com.blankj.utilcode.constant.PermissionConstants.Permission;
  *     作者: robot
  *
  *     time  : 2017/12/29
- *     desc  : utils about permission
+ *     desc  : 权限相关
  * </pre>
  */
 public final class PermissionUtils {
@@ -52,7 +52,7 @@ public final class PermissionUtils {
     private List<String>        mPermissionsDeniedForever;
 
     /**
-     * Return the permissions used in application.
+     * 获取应用权限
      *
      * @return the permissions used in application
      */
@@ -61,7 +61,7 @@ public final class PermissionUtils {
     }
 
     /**
-     * Return the permissions used in application.
+     * 获取应用权限
      *
      * @param packageName The name of the package.
      * @return the permissions used in application
@@ -80,7 +80,7 @@ public final class PermissionUtils {
     }
 
     /**
-     * Return whether <em>you</em> have granted the permissions.
+     * 判断权限是否被授予 <em>you</em> have granted the permissions.
      *
      * @param permissions The permissions.
      * @return {@code true}: yes<br>{@code false}: no
@@ -101,7 +101,7 @@ public final class PermissionUtils {
     }
 
     /**
-     * Launch the application's details settings.
+     * 打开应用具体设置
      */
     public static void launchAppDetailsSettings() {
         Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS");
@@ -110,7 +110,7 @@ public final class PermissionUtils {
     }
 
     /**
-     * Set the permissions.
+     * 设置请求权限
      *
      * @param permissions The permissions.
      * @return the single {@link PermissionUtils} instance
@@ -132,7 +132,7 @@ public final class PermissionUtils {
     }
 
     /**
-     * Set rationale listener.
+     * 设置拒绝权限后再次请求的回调接口
      *
      * @param listener The rationale listener.
      * @return the single {@link PermissionUtils} instance
@@ -143,7 +143,7 @@ public final class PermissionUtils {
     }
 
     /**
-     * Set the simple call back.
+     * 设置简单回调
      *
      * @param callback the simple call back
      * @return the single {@link PermissionUtils} instance
@@ -154,7 +154,7 @@ public final class PermissionUtils {
     }
 
     /**
-     * Set the full call back.
+     * 设置完整回调
      *
      * @param callback the full call back
      * @return the single {@link PermissionUtils} instance
@@ -165,7 +165,7 @@ public final class PermissionUtils {
     }
 
     /**
-     * Set the theme callback.
+     * 设置主题
      *
      * @param callback The theme callback.
      * @return the single {@link PermissionUtils} instance
@@ -176,7 +176,7 @@ public final class PermissionUtils {
     }
 
     /**
-     * Start request.
+     * 开始请求
      */
     public void request() {
         mPermissionsGranted = new ArrayList<>();

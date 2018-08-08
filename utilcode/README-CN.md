@@ -363,6 +363,8 @@ getShareTextIntent               : 获取分享文本的意图
 getShareImageIntent              : 获取分享图片的意图
 getComponentIntent               : 获取其他应用组件的意图
 getShutdownIntent                : 获取关机的意图
+getDialIntent                    : 获取打电话的意图
+getSendSmsIntent                 : 获取发短信的意图
 getCaptureIntent                 : 获取拍照的意图
 ```
 
@@ -431,11 +433,12 @@ isWifiAvailable       : 判断 wifi 数据是否可用
 getNetworkOperatorName: 获取移动网络运营商名称
 getNetworkType        : 获取当前网络类型
 getIPAddress          : 获取 IP 地址
+getBroadcastIpAddress : 获取广播 IP 地址
 getDomainAddress      : 获取域名 IP 地址
 getIpAddressByWifi    : 根据 WiFi 获取网络 IP 地址
 getGatewayByWifi      : 根据 WiFi 获取网关 IP 地址
 getNetMaskByWifi      : 根据 WiFi 获取子网掩码 IP 地址
-getServerAddressByWifi: 根据 WiFi 获取服务端 IP 地址
+getServerAddressByWifi: 根据 WiFi 获取DHCP服务端 IP 地址
 ```
 
 * ### 对象相关 -> [ObjectUtils.java][object.java] -> [Test][object.test]
@@ -495,6 +498,8 @@ newInstance: 实例化反射对象
 field      : 设置反射的字段
 method     : 设置反射的方法
 get        : 获取反射想要获取的
+使用方式:
+  ReflectUtils.reflect((Object) " ").method("trim").get()
 ```
 
 * ### 正则相关 -> [RegexUtils.java][regex.java] -> [Test][regex.test]
@@ -674,9 +679,9 @@ toSBC           : 转化为全角字符
 * ### 线程相关 -> [ThreadUtils.java][thread.java] -> [Test][thread.test]
 ```
 isMainThread            : 判断当前是否主线程
-getFixedPool            : 获取固定线程池
-getSinglePool           : 获取单线程池
-getCachedPool           : 获取缓冲线程池
+getFixedPool            : 获取固定线程池,以共享的无界队列方式来运行这些线程。
+getSinglePool           : 获取单线程池,线程池为无限大，当执行当前任务时上一个任务已经完成，会复用执行上一个任务的线程，而不用每次新建线程
+getCachedPool           : 获取缓存线程池,可缓存线程池，先查看池中有没有以前建立的线程，如果有，就直接使用。如果没有，就建一个新的线程加入池中，缓存型池子通常用于执行一些生存期很短的异步型任务
 getIoPool               : 获取 IO 线程池
 getCpuPool              : 获取 CPU 线程池
 executeByFixed          : 在固定线程池执行任务

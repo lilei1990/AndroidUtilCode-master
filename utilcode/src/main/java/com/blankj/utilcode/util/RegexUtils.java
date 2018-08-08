@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
  *     作者: robot
  *
  *     time  : 2016/08/02
- *     desc  : utils about regex
+ *     desc  : 正则相关
  * </pre>
  */
 public final class RegexUtils {
@@ -27,7 +27,7 @@ public final class RegexUtils {
     ///////////////////////////////////////////////////////////////////////////
 
     /**
-     * Return whether input matches regex of simple mobile.
+     * 验证手机号（简单）
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -37,7 +37,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of exact mobile.
+     * 验证手机号（精确）
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -47,7 +47,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of telephone number.
+     * 验证电话号码.
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -57,7 +57,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of id card number which length is 15.
+     * 验证身份证号码 15 位
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -67,7 +67,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of id card number which length is 18.
+     * 验证身份证号码 18 位
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -77,7 +77,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of email.
+     * 验证邮箱
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -87,7 +87,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of url.
+     * 验证 URL
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -97,7 +97,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of Chinese character.
+     * 验证汉字
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -107,7 +107,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of username.
+     * 验证用户名
      * <p>scope for "a-z", "A-Z", "0-9", "_", "Chinese character"</p>
      * <p>can't end with "_"</p>
      * <p>length is between 6 to 20</p>.
@@ -120,7 +120,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of date which pattern is "yyyy-MM-dd".
+     * 验证 yyyy-MM-dd 格式的日期校验，已考虑平闰年
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -130,7 +130,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches regex of ip address.
+     * 验证 IP 地址
      *
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
@@ -140,7 +140,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return whether input matches the regex.
+     * 判断是否匹配正则
      *
      * @param regex The regex.
      * @param input The input.
@@ -151,7 +151,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Return the list of input matches the regex.
+     * 获取正则匹配的部分
      *
      * @param regex The regex.
      * @param input The input.
@@ -169,7 +169,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Splits input around matches of the regex.
+     * 获取正则匹配分组
      *
      * @param input The input.
      * @param regex The regex.
@@ -181,7 +181,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Replace the first subsequence of the input sequence that matches the
+     * 替换正则匹配的第一部分
      * regex with the given replacement string.
      *
      * @param input       The input.
@@ -199,7 +199,7 @@ public final class RegexUtils {
     }
 
     /**
-     * Replace every subsequence of the input sequence that matches the
+     * 替换所有正则匹配的部分
      * pattern with the given replacement string.
      *
      * @param input       The input.

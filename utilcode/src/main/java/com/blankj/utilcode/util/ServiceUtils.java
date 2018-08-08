@@ -16,7 +16,7 @@ import java.util.Set;
  *     作者: robot
  *
  *     time  : 2016/08/02
- *     desc  : utils about service
+ *     desc  : 服务相关
  * </pre>
  */
 public final class ServiceUtils {
@@ -26,7 +26,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Return all of the services are running.
+     * 获取所有运行的服务
      *
      * @return all of the services are running
      */
@@ -44,7 +44,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Start the service.
+     * 启动服务
      *
      * @param className The name of class.
      */
@@ -57,7 +57,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Start the service.
+     * 启动服务
      *
      * @param cls The service class.
      */
@@ -67,7 +67,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Stop the service.
+     * 停止服务
      *
      * @param className The name of class.
      * @return {@code true}: success<br>{@code false}: fail
@@ -82,7 +82,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Stop the service.
+     * 停止服务
      *
      * @param cls The name of class.
      * @return {@code true}: success<br>{@code false}: fail
@@ -93,7 +93,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Bind the service.
+     * 绑定服务
      *
      * @param className The name of class.
      * @param conn      The ServiceConnection object.
@@ -119,7 +119,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Bind the service.
+     * 绑定服务
      *
      * @param cls   The service class.
      * @param conn  The ServiceConnection object.
@@ -142,7 +142,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Unbind the service.
+     * 解绑服务
      *
      * @param conn The ServiceConnection object.
      */
@@ -151,7 +151,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Return whether service is running.
+     * 判断服务是否运行
      *
      * @param cls The service class.
      * @return {@code true}: yes<br>{@code false}: no
@@ -161,7 +161,7 @@ public final class ServiceUtils {
     }
 
     /**
-     * Return whether service is running.
+     * 判断服务是否运行
      *
      * @param className The name of class.
      * @return {@code true}: yes<br>{@code false}: no

@@ -32,7 +32,7 @@ import java.lang.reflect.Field;
  *     作者: robot
  *
  *     time  : 2016/09/29
- *     desc  : utils about sToast
+ *     desc  : 吐司相关
  * </pre>
  */
 public final class ToastUtils {
@@ -54,6 +54,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 设置吐司位置
      * Set the gravity.
      *
      * @param gravity The gravity.
@@ -67,6 +68,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 设置背景颜色
      * Set the color of background.
      *
      * @param backgroundColor The color of background.
@@ -76,6 +78,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 设置背景资源
      * Set the resource of background.
      *
      * @param bgResource The resource of background.
@@ -85,6 +88,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 设置消息颜色
      * Set the color of message.
      *
      * @param msgColor The color of message.
@@ -94,6 +98,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 设置消息字体大小
      * Set the text size of message.
      *
      * @param textSize The text size of message.
@@ -103,6 +108,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示短时吐司
      * Show the sToast for a short period of time.
      *
      * @param text The text.
@@ -112,6 +118,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示短时吐司
      * Show the sToast for a short period of time.
      *
      * @param resId The resource id for text.
@@ -121,6 +128,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示短时吐司
      * Show the sToast for a short period of time.
      *
      * @param resId The resource id for text.
@@ -135,6 +143,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示短时吐司
      * Show the sToast for a short period of time.
      *
      * @param format The format.
@@ -149,6 +158,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示长时吐司
      * Show the sToast for a long period of time.
      *
      * @param text The text.
@@ -158,6 +168,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示长时吐司
      * Show the sToast for a long period of time.
      *
      * @param resId The resource id for text.
@@ -167,6 +178,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示长时吐司
      * Show the sToast for a long period of time.
      *
      * @param resId The resource id for text.
@@ -181,6 +193,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示长时吐司
      * Show the sToast for a long period of time.
      *
      * @param format The format.
@@ -195,6 +208,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示短时自定义吐司
      * Show custom sToast for a short period of time.
      *
      * @param layoutId ID for an XML layout resource to load.
@@ -206,6 +220,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 显示长时自定义吐司
      * Show custom sToast for a long period of time.
      *
      * @param layoutId ID for an XML layout resource to load.
@@ -217,6 +232,7 @@ public final class ToastUtils {
     }
 
     /**
+     * 取消吐司显示
      * Cancel the sToast.
      */
     public static void cancel() {

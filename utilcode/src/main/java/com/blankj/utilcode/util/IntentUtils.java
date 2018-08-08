@@ -21,7 +21,7 @@ import static android.Manifest.permission.CALL_PHONE;
  *     作者: robot
  *
  *     time  : 2016/09/23
- *     desc  : utils about intent
+ *     desc  : 意图相关
  * </pre>
  */
 public final class IntentUtils {
@@ -31,7 +31,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of install app.
+     * 获取安装 App（支持 6.0）的意图
      * <p>Target APIs greater than 25 must hold
      * {@code <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />}</p>
      *
@@ -43,7 +43,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of install app.
+     * 获取安装 App（支持 6.0）的意图
      * <p>Target APIs greater than 25 must hold
      * {@code <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />}</p>
      *
@@ -55,7 +55,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of install app.
+     * 获取安装 App（支持 6.0）的意图
      * <p>Target APIs greater than 25 must hold
      * {@code <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />}</p>
      *
@@ -68,7 +68,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of install app.
+     * 获取安装 App（支持 6.0）的意图
      * <p>Target APIs greater than 25 must hold
      * {@code <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />}</p>
      *
@@ -93,7 +93,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of uninstall app.
+     * 获取卸载 App 的意图
      *
      * @param packageName The name of the package.
      * @return the intent of uninstall app
@@ -103,7 +103,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of uninstall app.
+     * 获取卸载 App 的意图
      *
      * @param packageName The name of the package.
      * @param isNewTask   True to add flag of new task, false otherwise.
@@ -116,7 +116,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of launch app.
+     * 获取打开 App 的意图
      *
      * @param packageName The name of the package.
      * @return the intent of launch app
@@ -126,7 +126,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of launch app.
+     * 获取打开 App 的意图
      *
      * @param packageName The name of the package.
      * @param isNewTask   True to add flag of new task, false otherwise.
@@ -139,7 +139,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of launch app details settings.
+     * 获取 App 具体设置的意图
      *
      * @param packageName The name of the package.
      * @return the intent of launch app details settings
@@ -149,7 +149,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of launch app details settings.
+     * 获取 App 具体设置的意图
      *
      * @param packageName The name of the package.
      * @param isNewTask   True to add flag of new task, false otherwise.
@@ -163,7 +163,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share text.
+     * 获取分享文本的意图
      *
      * @param content The content.
      * @return the intent of share text
@@ -173,7 +173,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share text.
+     * 获取分享文本的意图
      *
      * @param content   The content.
      * @param isNewTask True to add flag of new task, false otherwise.
@@ -188,7 +188,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share image.
+     * 获取分享图片的意图
      *
      * @param content   The content.
      * @param imagePath The path of image.
@@ -199,7 +199,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share image.
+     * 获取分享图片的意图
      *
      * @param content   The content.
      * @param imagePath The path of image.
@@ -214,7 +214,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share image.
+     * 获取分享图片的意图
      *
      * @param content The content.
      * @param image   The file of image.
@@ -225,7 +225,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share image.
+     * 获取分享图片的意图
      *
      * @param content   The content.
      * @param image     The file of image.
@@ -240,7 +240,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share image.
+     * 获取分享图片的意图
      *
      * @param content The content.
      * @param uri     The uri of image.
@@ -251,7 +251,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share image.
+     * 获取分享图片的意图
      *
      * @param content   The content.
      * @param uri       The uri of image.
@@ -269,7 +269,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share images.
+     * 获取分享图片的意图
      *
      * @param content    The content.
      * @param imagePaths The paths of images.
@@ -280,7 +280,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share images.
+     * 获取分享图片的意图
      *
      * @param content    The content.
      * @param imagePaths The paths of images.
@@ -299,7 +299,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share images.
+     * 获取分享图片的意图
      *
      * @param content The content.
      * @param images  The files of images.
@@ -310,7 +310,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share images.
+     * 获取分享图片的意图
      *
      * @param content   The content.
      * @param images    The files of images.
@@ -330,7 +330,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share images.
+     * 获取分享图片的意图
      *
      * @param content The content.
      * @param uris    The uris of images.
@@ -341,7 +341,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of share images.
+     * 获取分享图片的意图
      *
      * @param content   The content.
      * @param uris      The uris of image.
@@ -359,7 +359,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of component.
+     * 获取其他应用组件的意图
      *
      * @param packageName The name of the package.
      * @param className   The name of class.
@@ -370,7 +370,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of component.
+     * 获取其他应用组件的意图
      *
      * @param packageName The name of the package.
      * @param className   The name of class.
@@ -384,7 +384,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of component.
+     * 获取其他应用组件的意图
      *
      * @param packageName The name of the package.
      * @param className   The name of class.
@@ -398,7 +398,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of component.
+     * 获取其他应用组件的意图
      *
      * @param packageName The name of the package.
      * @param className   The name of class.
@@ -418,7 +418,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of shutdown.
+     * 获取关机的意图
      * <p>Requires root permission
      * or hold {@code android:sharedUserId="android.uid.system"},
      * {@code <uses-permission android:name="android.permission.SHUTDOWN/>}
@@ -431,7 +431,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of shutdown.
+     * 获取关机的意图
      * <p>Requires root permission
      * or hold {@code android:sharedUserId="android.uid.system"},
      * {@code <uses-permission android:name="android.permission.SHUTDOWN/>}
@@ -447,7 +447,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of dial.
+     * 获取打电话的意图
      *
      * @param phoneNumber The phone number.
      * @return the intent of dial
@@ -457,7 +457,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of dial.
+     * 获取打电话的意图
      *
      * @param phoneNumber The phone number.
      * @param isNewTask   True to add flag of new task, false otherwise.
@@ -469,7 +469,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of call.
+     * 获取打电话的意图
      * <p>Must hold {@code <uses-permission android:name="android.permission.CALL_PHONE" />}</p>
      *
      * @param phoneNumber The phone number.
@@ -481,7 +481,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of call.
+     * 获取打电话的意图
      * <p>Must hold {@code <uses-permission android:name="android.permission.CALL_PHONE" />}</p>
      *
      * @param phoneNumber The phone number.
@@ -495,7 +495,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of send SMS.
+     * 获取发短信的意图
      *
      * @param phoneNumber The phone number.
      * @param content     The content of SMS.
@@ -506,7 +506,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of send SMS.
+     * 获取发短信的意图
      *
      * @param phoneNumber The phone number.
      * @param content     The content of SMS.
@@ -523,7 +523,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of capture.
+     * 获取拍照的意图
      *
      * @param outUri The uri of output.
      * @return the intent of capture
@@ -533,7 +533,7 @@ public final class IntentUtils {
     }
 
     /**
-     * Return the intent of capture.
+     * 获取拍照的意图
      *
      * @param outUri    The uri of output.
      * @param isNewTask True to add flag of new task, false otherwise.

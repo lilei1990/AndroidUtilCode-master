@@ -56,6 +56,8 @@ import java.io.OutputStream;
  */
 public final class ImageUtils {
 
+    private Bitmap src;
+
     private ImageUtils() {
         throw new UnsupportedOperationException("u can't instantiate me...");
     }
@@ -387,7 +389,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the scaled bitmap.
+     * 缩放图片
      *
      * @param src       The source of bitmap.
      * @param newWidth  The new width.
@@ -399,7 +401,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the scaled bitmap.
+     * 缩放图片
      *
      * @param src       The source of bitmap.
      * @param newWidth  The new width.
@@ -418,7 +420,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the scaled bitmap
+     * 倾斜图片
      *
      * @param src         The source of bitmap.
      * @param scaleWidth  The scale of width.
@@ -430,7 +432,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the scaled bitmap
+     * 倾斜图片
      *
      * @param src         The source of bitmap.
      * @param scaleWidth  The scale of width.
@@ -451,7 +453,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the clipped bitmap.
+     * 裁剪图片
      *
      * @param src    The source of bitmap.
      * @param x      The x coordinate of the first pixel.
@@ -469,7 +471,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the clipped bitmap.
+     * 裁剪图片
      *
      * @param src     The source of bitmap.
      * @param x       The x coordinate of the first pixel.
@@ -492,7 +494,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the skewed bitmap.
+     * 倾斜图片
      *
      * @param src The source of bitmap.
      * @param kx  The skew factor of x.
@@ -504,7 +506,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the skewed bitmap.
+     * 倾斜图片
      *
      * @param src     The source of bitmap.
      * @param kx      The skew factor of x.
@@ -520,7 +522,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the skewed bitmap.
+     * 倾斜图片
      *
      * @param src The source of bitmap.
      * @param kx  The skew factor of x.
@@ -538,7 +540,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the skewed bitmap.
+     * 倾斜图片
      *
      * @param src     The source of bitmap.
      * @param kx      The skew factor of x.
@@ -563,7 +565,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the rotated bitmap.
+     * 旋转图片
      *
      * @param src     The source of bitmap.
      * @param degrees The number of degrees.
@@ -579,7 +581,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the rotated bitmap.
+     * 旋转图片
      *
      * @param src     The source of bitmap.
      * @param degrees The number of degrees.
@@ -603,7 +605,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the rotated degree.
+     * 获取图片旋转角度
      *
      * @param filePath The path of file.
      * @return the rotated degree
@@ -632,7 +634,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round bitmap.
+     * 转为圆形图片
      *
      * @param src The source of bitmap.
      * @return the round bitmap
@@ -642,7 +644,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round bitmap.
+     * 转为圆形图片
      *
      * @param src     The source of bitmap.
      * @param recycle True to recycle the source of bitmap, false otherwise.
@@ -653,7 +655,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round bitmap.
+     * 转为圆形图片
      *
      * @param src         The source of bitmap.
      * @param borderSize  The size of border.
@@ -667,7 +669,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round bitmap.
+     * 转为圆形图片
      *
      * @param src         The source of bitmap.
      * @param recycle     True to recycle the source of bitmap, false otherwise.
@@ -709,7 +711,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round corner bitmap.
+     * 转为圆角图片
      *
      * @param src    The source of bitmap.
      * @param radius The radius of corner.
@@ -720,7 +722,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round corner bitmap.
+     * 转为圆角图片
      *
      * @param src     The source of bitmap.
      * @param radius  The radius of corner.
@@ -734,7 +736,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round corner bitmap.
+     * 转为圆角图片
      *
      * @param src         The source of bitmap.
      * @param radius      The radius of corner.
@@ -750,7 +752,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round corner bitmap.
+     * 转为圆角图片
      *
      * @param src         The source of bitmap.
      * @param radius      The radius of corner.
@@ -789,7 +791,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round corner bitmap with border.
+     * 添加圆角边框
      *
      * @param src          The source of bitmap.
      * @param borderSize   The size of border.
@@ -805,7 +807,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round corner bitmap with border.
+     * 添加圆角边框
      *
      * @param src          The source of bitmap.
      * @param borderSize   The size of border.
@@ -823,7 +825,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round bitmap with border.
+     * 添加圆形边框
      *
      * @param src        The source of bitmap.
      * @param borderSize The size of border.
@@ -837,7 +839,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the round bitmap with border.
+     * 添加圆形边框
      *
      * @param src        The source of bitmap.
      * @param borderSize The size of border.
@@ -853,7 +855,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the bitmap with border.
+     * 添加倒影
      *
      * @param src          The source of bitmap.
      * @param borderSize   The size of border.
@@ -891,7 +893,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the bitmap with reflection.
+     * 添加文字水印
      *
      * @param src              The source of bitmap.
      * @param reflectionHeight The height of reflection.
@@ -902,7 +904,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the bitmap with reflection.
+     * 添加文字水印
      *
      * @param src              The source of bitmap.
      * @param reflectionHeight The height of reflection.
@@ -940,7 +942,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the bitmap with text watermarking.
+     * 添加图片水印
      *
      * @param src      The source of bitmap.
      * @param content  The content of text.
@@ -960,7 +962,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the bitmap with text watermarking.
+     * 添加图片水印
      *
      * @param src      The source of bitmap.
      * @param content  The content of text.
@@ -992,7 +994,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the bitmap with image watermarking.
+     * 转为 alpha 位图
      *
      * @param src       The source of bitmap.
      * @param watermark The image watermarking.
@@ -1009,7 +1011,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the bitmap with image watermarking.
+     * 转为 alpha 位图
      *
      * @param src       The source of bitmap.
      * @param watermark The image watermarking.
@@ -1038,7 +1040,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the alpha bitmap.
+     * 转为 alpha 位图
      *
      * @param src The source of bitmap.
      * @return the alpha bitmap
@@ -1048,7 +1050,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the alpha bitmap.
+     * 转为 alpha 位图
      *
      * @param src     The source of bitmap.
      * @param recycle True to recycle the source of bitmap, false otherwise.
@@ -1062,7 +1064,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the gray bitmap.
+     * 转为灰度图片
      *
      * @param src The source of bitmap.
      * @return the gray bitmap
@@ -1072,7 +1074,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the gray bitmap.
+     * 转为灰度图片
      *
      * @param src     The source of bitmap.
      * @param recycle True to recycle the source of bitmap, false otherwise.
@@ -1093,7 +1095,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the blur bitmap fast.
+     * 快速模糊
      * <p>zoom out, blur, zoom in</p>
      *
      * @param src    The source of bitmap.
@@ -1112,7 +1114,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the blur bitmap fast.
+     * 快速模糊
      * <p>zoom out, blur, zoom in</p>
      *
      * @param src     The source of bitmap.
@@ -1159,7 +1161,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the blur bitmap using render script.
+     * renderScript 模糊图片
      *
      * @param src    The source of bitmap.
      * @param radius The radius(0...25).
@@ -1174,7 +1176,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the blur bitmap using render script.
+     * renderScript 模糊图片
      *
      * @param src     The source of bitmap.
      * @param radius  The radius(0...25).
@@ -1211,7 +1213,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the blur bitmap using stack.
+     * stack 模糊图片
      *
      * @param src    The source of bitmap.
      * @param radius The radius(0...25).
@@ -1222,7 +1224,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the blur bitmap using stack.
+     * stack 模糊图片
      *
      * @param src     The source of bitmap.
      * @param radius  The radius(0...25).
@@ -1427,7 +1429,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Save the bitmap.
+     * 保存图片
      *
      * @param src      The source of bitmap.
      * @param filePath The path of file.
@@ -1441,7 +1443,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Save the bitmap.
+     * 保存图片
      *
      * @param src    The source of bitmap.
      * @param file   The file.
@@ -1453,7 +1455,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Save the bitmap.
+     * 保存图片
      *
      * @param src      The source of bitmap.
      * @param filePath The path of file.
@@ -1469,7 +1471,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Save the bitmap.
+     * 保存图片
      *
      * @param src     The source of bitmap.
      * @param file    The file.
@@ -1503,7 +1505,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return whether it is a image according to the file name.
+     * 根据文件名判断文件是否为图片
      *
      * @param file The file.
      * @return {@code true}: yes<br>{@code false}: no
@@ -1513,7 +1515,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return whether it is a image according to the file name.
+     * 根据文件名判断文件是否为图片
      *
      * @param filePath The path of file.
      * @return {@code true}: yes<br>{@code false}: no
@@ -1526,7 +1528,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the type of image.
+     * 获取图片类型
      *
      * @param filePath The path of file.
      * @return the type of image
@@ -1536,7 +1538,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the type of image.
+     * 获取图片类型
      *
      * @param file The file.
      * @return the type of image
@@ -1625,7 +1627,7 @@ public final class ImageUtils {
     ///////////////////////////////////////////////////////////////////////////
 
     /**
-     * Return the compressed bitmap using scale.
+     * 按缩放压缩
      *
      * @param src       The source of bitmap.
      * @param newWidth  The new width.
@@ -1639,7 +1641,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using scale.
+     * 按缩放压缩
      *
      * @param src       The source of bitmap.
      * @param newWidth  The new width.
@@ -1655,7 +1657,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using scale.
+     * 按缩放压缩
      *
      * @param src         The source of bitmap.
      * @param scaleWidth  The scale of width.
@@ -1669,7 +1671,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using scale.
+     * 按缩放压缩
      *
      * @param src         The source of bitmap.
      * @param scaleWidth  The scale of width.
@@ -1685,7 +1687,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using quality.
+     * 按质量压缩
      *
      * @param src     The source of bitmap.
      * @param quality The quality.
@@ -1697,7 +1699,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using quality.
+     * 按质量压缩
      *
      * @param src     The source of bitmap.
      * @param quality The quality.
@@ -1716,7 +1718,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using quality.
+     * 按质量压缩
      *
      * @param src         The source of bitmap.
      * @param maxByteSize The maximum size of byte.
@@ -1727,7 +1729,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using quality.
+     * 按质量压缩
      *
      * @param src         The source of bitmap.
      * @param maxByteSize The maximum size of byte.
@@ -1778,7 +1780,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using sample size.
+     * 按采样大小压缩
      *
      * @param src        The source of bitmap.
      * @param sampleSize The sample size.
@@ -1790,7 +1792,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using sample size.
+     * 按采样大小压缩
      *
      * @param src        The source of bitmap.
      * @param sampleSize The sample size.
@@ -1811,7 +1813,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using sample size.
+     * 按采样大小压缩
      *
      * @param src       The source of bitmap.
      * @param maxWidth  The maximum width.
@@ -1825,7 +1827,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Return the compressed bitmap using sample size.
+     * 按采样大小压缩
      *
      * @param src       The source of bitmap.
      * @param maxWidth  The maximum width.

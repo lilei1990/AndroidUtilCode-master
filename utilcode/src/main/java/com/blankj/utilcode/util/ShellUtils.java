@@ -11,7 +11,7 @@ import java.util.List;
  *     作者: robot
  *
  *     time  : 2016/08/07
- *     desc  : utils about shell
+ *     desc  : Shell 相关
  * </pre>
  */
 public final class ShellUtils {
@@ -23,7 +23,7 @@ public final class ShellUtils {
     }
 
     /**
-     * Execute the command.
+     * 是否是在 root 下执行命令
      *
      * @param command  The command.
      * @param isRooted True to use root, false otherwise.
@@ -34,7 +34,7 @@ public final class ShellUtils {
     }
 
     /**
-     * Execute the command.
+     * 是否是在 root 下执行命令
      *
      * @param commands The commands.
      * @param isRooted True to use root, false otherwise.
@@ -45,7 +45,7 @@ public final class ShellUtils {
     }
 
     /**
-     * Execute the command.
+     * 是否是在 root 下执行命令
      *
      * @param commands The commands.
      * @param isRooted True to use root, false otherwise.
@@ -56,7 +56,7 @@ public final class ShellUtils {
     }
 
     /**
-     * Execute the command.
+     * 是否是在 root 下执行命令
      *
      * @param command         The command.
      * @param isRooted        True to use root, false otherwise.
@@ -70,7 +70,7 @@ public final class ShellUtils {
     }
 
     /**
-     * Execute the command.
+     * 是否是在 root 下执行命令
      *
      * @param commands        The commands.
      * @param isRooted        True to use root, false otherwise.
@@ -86,7 +86,7 @@ public final class ShellUtils {
     }
 
     /**
-     * Execute the command.
+     * 是否是在 root 下执行命令
      *
      * @param commands        The commands.
      * @param isRooted        True to use root, false otherwise.

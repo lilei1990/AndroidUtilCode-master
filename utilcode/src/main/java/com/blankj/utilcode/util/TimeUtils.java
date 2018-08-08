@@ -16,7 +16,7 @@ import java.util.Locale;
  *     作者: robot
  *
  *     time  : 2016/08/02
- *     desc  : utils about time
+ *     desc  : 时间相关
  * </pre>
  */
 public final class TimeUtils {
@@ -155,6 +155,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取两个时间差（单位：unit）
      * Return the time span, in unit.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -177,6 +178,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取两个时间差（单位：unit）
      * Return the time span, in unit.
      *
      * @param time1  The first formatted time string.
@@ -200,6 +202,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取两个时间差（单位：unit）
      * Return the time span, in unit.
      *
      * @param date1 The first date.
@@ -221,6 +224,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取两个时间差（单位：unit）
      * Return the time span, in unit.
      *
      * @param millis1 The first milliseconds.
@@ -242,6 +246,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取合适型两个时间差
      * Return the fit time span.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -266,6 +271,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取合适型两个时间差
      * Return the fit time span.
      *
      * @param time1     The first formatted time string.
@@ -291,6 +297,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取合适型两个时间差
      * Return the fit time span.
      *
      * @param date1     The first date.
@@ -311,6 +318,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取合适型两个时间差
      * Return the fit time span.
      *
      * @param millis1   The first milliseconds.
@@ -333,6 +341,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取当前毫秒时间戳
      * Return the current time in milliseconds.
      *
      * @return the current time in milliseconds
@@ -342,6 +351,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取当前时间字符串
      * Return the current formatted time string.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -352,6 +362,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取当前时间字符串
      * Return the current formatted time string.
      *
      * @param format The format.
@@ -362,6 +373,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取当前 Date
      * Return the current date.
      *
      * @return the current date
@@ -371,6 +383,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与当前时间的差（单位：unit）
      * Return the time span by now, in unit.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -390,6 +403,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与当前时间的差（单位：unit）
      * Return the time span by now, in unit.
      *
      * @param time   The formatted time string.
@@ -411,6 +425,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与当前时间的差（单位：unit）
      * Return the time span by now, in unit.
      *
      * @param date The date.
@@ -429,6 +444,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与当前时间的差（单位：unit）
      * Return the time span by now, in unit.
      *
      * @param millis The milliseconds.
@@ -447,6 +463,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取合适型与当前时间的差
      * Return the fit time span by now.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -467,6 +484,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取合适型与当前时间的差
      * Return the fit time span by now.
      *
      * @param time      The formatted time string.
@@ -489,6 +507,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取合适型与当前时间的差
      * Return the fit time span by now.
      *
      * @param date      The date.
@@ -508,6 +527,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取合适型与当前时间的差
      * Return the fit time span by now.
      *
      * @param millis    The milliseconds.
@@ -527,6 +547,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取友好型与当前时间的差
      * Return the friendly time span by now.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -547,6 +568,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取友好型与当前时间的差
      * Return the friendly time span by now.
      *
      * @param time   The formatted time string.
@@ -568,6 +590,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取友好型与当前时间的差
      * Return the friendly time span by now.
      *
      * @param date The date.
@@ -587,6 +610,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取友好型与当前时间的差
      * Return the friendly time span by now.
      *
      * @param millis The milliseconds.
@@ -635,6 +659,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间戳
      * Return the milliseconds differ time span.
      *
      * @param millis   The milliseconds.
@@ -656,6 +681,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间戳
      * Return the milliseconds differ time span.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -678,6 +704,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间戳
      * Return the milliseconds differ time span.
      *
      * @param time     The formatted time string.
@@ -691,6 +718,7 @@ public final class TimeUtils {
      *                 <li>{@link TimeConstants#HOUR}</li>
      *                 <li>{@link TimeConstants#DAY }</li>
      *                 </ul>
+     *                 获取与给定时间等于时间差的时间戳
      * @return the milliseconds differ time span.
      */
     public static long getMillis(final String time,
@@ -701,6 +729,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间戳
      * Return the milliseconds differ time span.
      *
      * @param date     The date.
@@ -713,6 +742,7 @@ public final class TimeUtils {
      *                 <li>{@link TimeConstants#HOUR}</li>
      *                 <li>{@link TimeConstants#DAY }</li>
      *                 </ul>
+     *                 获取与给定时间等于时间差的时间戳
      * @return the milliseconds differ time span.
      */
     public static long getMillis(final Date date,
@@ -722,6 +752,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间字符串
      * Return the formatted time string differ time span.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -744,6 +775,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间字符串
      * Return the formatted time string differ time span.
      *
      * @param millis   The milliseconds.
@@ -767,6 +799,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间字符串
      * Return the formatted time string differ time span.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -789,6 +822,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间字符串
      * Return the formatted time string differ time span.
      *
      * @param time     The formatted time string.
@@ -812,6 +846,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间字符串
      * Return the formatted time string differ time span.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -834,6 +869,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的时间字符串
      * Return the formatted time string differ time span.
      *
      * @param date     The date.
@@ -857,6 +893,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的 Date
      * Return the date differ time span.
      *
      * @param millis   The milliseconds.
@@ -878,6 +915,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的 Date
      * Return the date differ time span.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -900,6 +938,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的 Date
      * Return the date differ time span.
      *
      * @param time     The formatted time string.
@@ -923,6 +962,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与给定时间等于时间差的 Date
      * Return the date differ time span.
      *
      * @param date     The date.
@@ -944,6 +984,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与当前时间等于时间差的时间戳
      * Return the milliseconds differ time span by now.
      *
      * @param timeSpan The time span.
@@ -962,6 +1003,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与当前时间等于时间差的时间字符串
      * Return the formatted time string differ time span by now.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -981,6 +1023,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与当前时间等于时间差的时间字符串
      * Return the formatted time string differ time span by now.
      *
      * @param timeSpan The time span.
@@ -1002,6 +1045,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取与当前时间等于时间差的 Date
      * Return the date differ time span by now.
      *
      * @param timeSpan The time span.
@@ -1020,6 +1064,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 判断是否今天
      * Return whether it is today.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -1031,6 +1076,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 判断是否今天
      * Return whether it is today.
      *
      * @param time   The formatted time string.
@@ -1042,6 +1088,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 判断是否今天
      * Return whether it is today.
      *
      * @param date The date.
@@ -1052,6 +1099,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 判断是否今天
      * Return whether it is today.
      *
      * @param millis The milliseconds.
@@ -1063,6 +1111,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 判断是否闰年
      * Return whether it is leap year.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -1074,6 +1123,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 判断是否闰年
      * Return whether it is leap year.
      *
      * @param time   The formatted time string.
@@ -1085,6 +1135,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 判断是否闰年
      * Return whether it is leap year.
      *
      * @param date The date.
@@ -1098,6 +1149,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 判断是否闰年
      * Return whether it is leap year.
      *
      * @param millis The milliseconds.
@@ -1108,6 +1160,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 判断是否闰年
      * Return whether it is leap year.
      *
      * @param year The year.
@@ -1118,6 +1171,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取中式星期
      * Return the day of week in Chinese.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -1129,6 +1183,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取中式星期
      * Return the day of week in Chinese.
      *
      * @param time   The formatted time string.
@@ -1140,6 +1195,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取中式星期
      * Return the day of week in Chinese.
      *
      * @param date The date.
@@ -1150,6 +1206,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取中式星期
      * Return the day of week in Chinese.
      *
      * @param millis The milliseconds.
@@ -1160,7 +1217,7 @@ public final class TimeUtils {
     }
 
     /**
-     * Return the day of week in US.
+     * 获取美式式星期
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
      * @param time The formatted time string.
@@ -1171,7 +1228,7 @@ public final class TimeUtils {
     }
 
     /**
-     * Return the day of week in US.
+     * 获取美式式星期
      *
      * @param time   The formatted time string.
      * @param format The format.
@@ -1182,7 +1239,7 @@ public final class TimeUtils {
     }
 
     /**
-     * Return the day of week in US.
+     * 获取美式式星期
      *
      * @param date The date.
      * @return the day of week in US
@@ -1192,7 +1249,7 @@ public final class TimeUtils {
     }
 
     /**
-     * Return the day of week in US.
+     * 获取美式式星期
      *
      * @param millis The milliseconds.
      * @return the day of week in US
@@ -1202,6 +1259,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 根据日历字段获取值
      * Returns the value of the given calendar field.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -1221,6 +1279,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 根据日历字段获取值
      * Returns the value of the given calendar field.
      *
      * @param time   The formatted time string.
@@ -1242,6 +1301,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 根据日历字段获取值
      * Returns the value of the given calendar field.
      *
      * @param date  The date.
@@ -1262,6 +1322,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 根据日历字段获取值
      * Returns the value of the given calendar field.
      *
      * @param millis The milliseconds.
@@ -1285,6 +1346,7 @@ public final class TimeUtils {
             {"猴", "鸡", "狗", "猪", "鼠", "牛", "虎", "兔", "龙", "蛇", "马", "羊"};
 
     /**
+     * 获取生肖
      * Return the Chinese zodiac.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -1296,6 +1358,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取生肖
      * Return the Chinese zodiac.
      *
      * @param time   The formatted time string.
@@ -1307,6 +1370,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取生肖
      * Return the Chinese zodiac.
      *
      * @param date The date.
@@ -1319,6 +1383,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取生肖
      * Return the Chinese zodiac.
      *
      * @param millis The milliseconds.
@@ -1329,6 +1394,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取生肖
      * Return the Chinese zodiac.
      *
      * @param year The year.
@@ -1345,6 +1411,7 @@ public final class TimeUtils {
     };
 
     /**
+     * 获取星座
      * Return the zodiac.
      * <p>The pattern is {@code yyyy-MM-dd HH:mm:ss}.</p>
      *
@@ -1356,6 +1423,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取星座
      * Return the zodiac.
      *
      * @param time   The formatted time string.
@@ -1367,6 +1435,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取星座
      * Return the zodiac.
      *
      * @param date The date.
@@ -1381,6 +1450,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取星座
      * Return the zodiac.
      *
      * @param millis The milliseconds.
@@ -1391,6 +1461,7 @@ public final class TimeUtils {
     }
 
     /**
+     * 获取星座
      * Return the zodiac.
      *
      * @param month The month.

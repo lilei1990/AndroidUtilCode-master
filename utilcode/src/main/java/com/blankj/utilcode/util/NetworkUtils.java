@@ -33,7 +33,7 @@ import static android.content.Context.WIFI_SERVICE;
  *     作者: robot
  *
  *     time  : 2016/08/02
- *     desc  : utils about network
+ *     desc  : 网络相关
  * </pre>
  */
 public final class NetworkUtils {
@@ -53,7 +53,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Open the settings of wireless.
+     * 打开网络设置界面
      */
     public static void openWirelessSettings() {
         Utils.getApp().startActivity(
@@ -63,7 +63,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return whether network is connected.
+     * 判断网络是否连接
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />}</p>
      *
@@ -76,7 +76,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return whether network is available using ping.
+     * 判断网络是否可用ping
      * <p>Must hold {@code <uses-permission android:name="android.permission.INTERNET" />}</p>
      * <p>The default ping ip: 223.5.5.5</p>
      *
@@ -88,7 +88,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return whether network is available using ping.
+     * 判断网络是否可用ping
      * <p>Must hold {@code <uses-permission android:name="android.permission.INTERNET" />}</p>
      *
      * @param ip The ip address.
@@ -111,7 +111,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return whether mobile data is enabled.
+     * 判断移动数据是否打开
      *
      * @return {@code true}: enabled<br>{@code false}: disabled
      */
@@ -132,8 +132,8 @@ public final class NetworkUtils {
     }
 
     /**
-     * Set mobile data enabled.
-     * <p>Must hold {@code android:sharedUserId="android.uid.system"},
+     * 打开或关闭移动数据
+     * <p>Must hold {@code android:sharedUserId="android.uid.system" 需要系统级的应用才可以},
      * {@code <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />}</p>
      *
      * @param enabled True to enabled, false otherwise.
@@ -155,7 +155,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return whether using mobile data.
+     * 判断网络是否是移动数据
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />}</p>
      *
@@ -170,7 +170,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return whether using 4G.
+     * 判断网络是否是 4G
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />}</p>
      *
@@ -185,7 +185,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return whether wifi is enabled.
+     *  判断 wifi 是否打开
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />}</p>
      *
@@ -199,7 +199,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Set wifi enabled.
+     * 打开或关闭 wifi
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />}</p>
      *
@@ -214,7 +214,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return whether wifi is connected.
+     * 判断 wifi 是否连接状态
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />}</p>
      *
@@ -230,7 +230,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return whether wifi is available.
+     * 判断 wifi 数据是否可用
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />},
      * {@code <uses-permission android:name="android.permission.INTERNET" />}</p>
@@ -243,7 +243,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return the name of network operate.
+     * 获取移动网络运营商名称
      *
      * @return the name of network operate
      */
@@ -254,7 +254,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return type of network.
+     * 获取当前网络类型
      * <p>Must hold
      * {@code <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />}</p>
      *
@@ -335,7 +335,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return the ip address.
+     * 获取 IP 地址
      * <p>Must hold {@code <uses-permission android:name="android.permission.INTERNET" />}</p>
      *
      * @param useIPv4 True to use ipv4, false otherwise.
@@ -378,7 +378,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return the ip address of broadcast.
+     * 返回广播的IP地址。
      *
      * @return the ip address of broadcast
      */
@@ -405,7 +405,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return the domain address.
+     * 获取域名 IP 地址
      * <p>Must hold {@code <uses-permission android:name="android.permission.INTERNET" />}</p>
      *
      * @param domain The name of domain.
@@ -424,7 +424,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return the ip address by wifi.
+     * 根据 WiFi 获取网络 IP 地址
      *
      * @return the ip address by wifi
      */
@@ -437,7 +437,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return the gate way by wifi.
+     * 根据 WiFi 获取网关 IP 地址
      *
      * @return the gate way by wifi
      */
@@ -450,7 +450,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return the net mask by wifi.
+     * 根据 WiFi 获取子网掩码 IP 地址
      *
      * @return the net mask by wifi
      */
@@ -463,7 +463,7 @@ public final class NetworkUtils {
     }
 
     /**
-     * Return the server address by wifi.
+     * 根据 WiFi 获取DHCP服务端 IP 地址
      *
      * @return the server address by wifi
      */

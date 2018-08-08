@@ -18,7 +18,7 @@ import java.util.Map;
  *     作者: robot
  *
  *     time  : 2017/12/24
- *     desc  : utils about object
+ *     desc  : 对象相关
  * </pre>
  */
 public final class ObjectUtils {
@@ -28,7 +28,7 @@ public final class ObjectUtils {
     }
 
     /**
-     * Return whether object is empty.
+     * isEmpty
      *
      * @param obj The object.
      * @return {@code true}: yes<br>{@code false}: no
@@ -121,7 +121,7 @@ public final class ObjectUtils {
     }
 
     /**
-     * Return whether object is not empty.
+     * 判断对象是否非空
      *
      * @param obj The object.
      * @return {@code true}: yes<br>{@code false}: no
@@ -174,7 +174,7 @@ public final class ObjectUtils {
     }
 
     /**
-     * Return whether object1 is equals to object2.
+     * 判断对象是否相等
      *
      * @param o1 The first object.
      * @param o2 The second object.
@@ -185,7 +185,7 @@ public final class ObjectUtils {
     }
 
     /**
-     * Require the object is not null.
+     * 检查对象非空
      *
      * @param object  The object.
      * @param message The message to use with the NullPointerException.
@@ -201,7 +201,7 @@ public final class ObjectUtils {
     }
 
     /**
-     * Require the objects are not null.
+     * 检查对象们非空
      *
      * @param objects The object.
      * @throws NullPointerException if any object is null in objects
@@ -214,7 +214,7 @@ public final class ObjectUtils {
     }
 
     /**
-     * Return the nonnull object or default object.
+     * 获取非空或默认对象
      *
      * @param object        The object.
      * @param defaultObject The default object to use with the object is null.
@@ -229,7 +229,7 @@ public final class ObjectUtils {
     }
 
     /**
-     * Return the hash code of object.
+     * 获取对象哈希值
      *
      * @param o The object.
      * @return the hash code of object

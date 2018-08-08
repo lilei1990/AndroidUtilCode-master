@@ -25,7 +25,7 @@ import static android.Manifest.permission.WRITE_SETTINGS;
  *     作者: robot
  *
  *     time  : 2016/08/02
- *     desc  : utils about screen
+ *     desc  : 屏幕相关
  * </pre>
  */
 public final class ScreenUtils {
@@ -35,7 +35,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return the width of screen, in pixel.
+     * 获取屏幕的宽度（单位：px）
      *
      * @return the width of screen, in pixel
      */
@@ -54,7 +54,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return the height of screen, in pixel.
+     * 获取屏幕的高度（单位：px）
      *
      * @return the height of screen, in pixel
      */
@@ -73,7 +73,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return the density of screen.
+     * 获取屏幕密度
      *
      * @return the density of screen
      */
@@ -82,7 +82,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return the screen density expressed as dots-per-inch.
+     * 获取屏幕密度 DPI
      *
      * @return the screen density expressed as dots-per-inch
      */
@@ -91,7 +91,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Set full screen.
+     * 设置屏幕为全屏
      *
      * @param activity The activity.
      */
@@ -101,7 +101,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Set non full screen.
+     * 设置屏幕为非全屏
      *
      * @param activity The activity.
      */
@@ -111,7 +111,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Toggle full screen.
+     * 切换屏幕为全屏与否状态
      *
      * @param activity The activity.
      */
@@ -128,7 +128,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return whether screen is full.
+     * 判断屏幕是否为全屏
      *
      * @param activity The activity.
      * @return {@code true}: yes<br>{@code false}: no
@@ -139,7 +139,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Set the screen to landscape.
+     * 设置屏幕为横屏
      *
      * @param activity The activity.
      */
@@ -148,7 +148,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Set the screen to portrait.
+     * 设置屏幕为竖屏
      *
      * @param activity The activity.
      */
@@ -157,7 +157,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return whether screen is landscape.
+     * 判断是否横屏
      *
      * @return {@code true}: yes<br>{@code false}: no
      */
@@ -167,7 +167,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return whether screen is portrait.
+     * 判断是否竖屏
      *
      * @return {@code true}: yes<br>{@code false}: no
      */
@@ -177,7 +177,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return the rotation of screen.
+     * 获取屏幕旋转角度
      *
      * @param activity The activity.
      * @return the rotation of screen
@@ -198,7 +198,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return the bitmap of screen.
+     * 截屏
      *
      * @param activity The activity.
      * @return the bitmap of screen
@@ -208,7 +208,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return the bitmap of screen.
+     * 截屏
      *
      * @param activity          The activity.
      * @param isDeleteStatusBar True to delete status bar, false otherwise.
@@ -241,7 +241,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return whether screen is locked.
+     * 判断是否锁屏
      *
      * @return {@code true}: yes<br>{@code false}: no
      */
@@ -252,7 +252,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Set the duration of sleep.
+     * 设置进入休眠时长
      * <p>Must hold {@code <uses-permission android:name="android.permission.WRITE_SETTINGS" />}</p>
      *
      * @param duration The duration.
@@ -267,7 +267,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return the duration of sleep.
+     * 获取进入休眠时长
      *
      * @return the duration of sleep.
      */
@@ -284,7 +284,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Return whether device is tablet.
+     * 判断是否是平板
      *
      * @return {@code true}: yes<br>{@code false}: no
      */
@@ -295,7 +295,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Adapt the screen for vertical slide.
+     * 适配垂直滑动的屏幕
      *
      * @param designWidthInDp The size of design diagram's width, in dp,
      *                        e.g. the design diagram width is 720px, in XHDPI device,
@@ -307,7 +307,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Adapt the screen for horizontal slide.
+     * 适配水平滑动的屏幕
      *
      * @param designHeightInDp The size of design diagram's height, in dp,
      *                         e.g. the design diagram height is 1080px, in XXHDPI device,
@@ -319,7 +319,7 @@ public final class ScreenUtils {
     }
 
     /**
-     * Cancel adapt the screen.
+     * 取消适配屏幕.
      *
      * @param activity The activity.
      */

@@ -5,7 +5,7 @@ package com.blankj.utilcode.util;
  *     作者: robot
  *
  *     time  : 2016/08/16
- *     desc  : utils about string
+ *     desc  : 字符串相关
  * </pre>
  */
 public final class StringUtils {
@@ -15,7 +15,7 @@ public final class StringUtils {
     }
 
     /**
-     * Return whether the string is null or 0-length.
+     * 判断字符串是否为 null 或长度为 0
      *
      * @param s The string.
      * @return {@code true}: yes<br> {@code false}: no
@@ -25,7 +25,7 @@ public final class StringUtils {
     }
 
     /**
-     * Return whether the string is null or whitespace.
+     * 判断字符串是否为 null 或全为空格
      *
      * @param s The string.
      * @return {@code true}: yes<br> {@code false}: no
@@ -35,7 +35,7 @@ public final class StringUtils {
     }
 
     /**
-     * Return whether the string is null or white space.
+     * 判断字符串是否为 null 或全为空白字符
      *
      * @param s The string.
      * @return {@code true}: yes<br> {@code false}: no
@@ -51,7 +51,7 @@ public final class StringUtils {
     }
 
     /**
-     * Return whether string1 is equals to string2.
+     * 判断两字符串是否相等
      *
      * @param s1 The first string.
      * @param s2 The second string.
@@ -74,7 +74,7 @@ public final class StringUtils {
     }
 
     /**
-     * Return whether string1 is equals to string2, ignoring case considerations..
+     * 判断两字符串忽略大小写是否相等
      *
      * @param s1 The first string.
      * @param s2 The second string.
@@ -85,6 +85,7 @@ public final class StringUtils {
     }
 
     /**
+     * null 转为长度为 0 的字符串
      * Return {@code ""} if string equals null.
      *
      * @param s The string.
@@ -95,7 +96,7 @@ public final class StringUtils {
     }
 
     /**
-     * Return the length of string.
+     * 返回字符串长度
      *
      * @param s The string.
      * @return the length of string
@@ -105,7 +106,7 @@ public final class StringUtils {
     }
 
     /**
-     * Set the first letter of string upper.
+     * 首字母大写
      *
      * @param s The string.
      * @return the string with first letter upper.
@@ -117,7 +118,7 @@ public final class StringUtils {
     }
 
     /**
-     * Set the first letter of string lower.
+     * 首字母小写
      *
      * @param s The string.
      * @return the string with first letter lower.
@@ -129,7 +130,7 @@ public final class StringUtils {
     }
 
     /**
-     * Reverse the string.
+     * 反转字符串
      *
      * @param s The string.
      * @return the reverse string.
@@ -150,6 +151,7 @@ public final class StringUtils {
     }
 
     /**
+     * 转化为半角字符
      * Convert string to DBC.
      *
      * @param s The string.
@@ -171,6 +173,7 @@ public final class StringUtils {
     }
 
     /**
+     * 转化为全角字符
      * Convert string to SBC.
      *
      * @param s The string.
